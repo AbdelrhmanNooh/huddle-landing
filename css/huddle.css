@@ -1,0 +1,127 @@
+/*
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+### Headings
+
+- Family: [Poppins] ok
+- Weights: 400, 600
+### Body
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+*/
+
+* {
+    box-sizing: border-box;
+    
+}
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+@media (max-width:375px) {
+    body {
+        width: 375px;
+    }
+}
+
+/*Start Container*/
+.container {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: #674bb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 70px;
+}
+
+.container .flexone {
+    flex-basis: 45%;
+    
+}
+.container .flexone .logo {
+    position: relative;
+    top: -25px;
+    margin-bottom: 70px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.container .flextwo {
+    flex-basis: 35%;
+    max-width: 100%; 
+}
+
+.container .flextwo .headings {
+    color: white;
+}
+
+.container .flextwo .headings h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.4;
+    color: white;
+    max-width: 400px;
+}
+
+.container .flextwo .headings p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 450px;
+}
+
+
+.container .flextwo  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 15px 52px;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 32px;
+    color: #674bb1;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.418);   
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .3s ease-in-out;
+}
+.container .flextwo  button:hover {
+    background-color: #e980e7;;
+    color: white;
+}
+.icons {
+    position: absolute;
+    right: 15%;
+    top: 94%;
+    color: white;
+    margin-top: -15px;
+}
+
+.icons i {
+    font-size: 30px;
+    margin-left: 20px;
+    transition: all .3s ease-in-out;
+}
+.icons i:hover {
+    color: #e980e7;
+}
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Sigmar', sans-serif;
+font-family: 'Cairo', sans-serif;
+*/
